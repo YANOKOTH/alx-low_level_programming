@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 gcc -c $CFILE`
+=======
+gcc -c $CFILE
+>>>>>>> 7affdb27ca5d0470821e7a1374ed9d91e3e85f03
