@@ -1,6 +1,8 @@
 #!/bin/bash
-gcc -c #include <stdio .h>
-
+#include <stdio .h>
+/**
+   *Prints a sentence
+    */
  int main();{
 	 puts("\"Programming is like building a multilingual puzzle");
 	  return 0;
