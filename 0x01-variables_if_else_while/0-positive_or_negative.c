@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
- * main-entry point
- * description;prints random value as positive or negative 
- * Always return o
-  */
+ * main - Determines if a number is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
