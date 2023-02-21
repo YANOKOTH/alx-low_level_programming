@@ -1,19 +1,19 @@
 #include "main.h"
-
 /**
- * main - Prints _putchar.c.
- *Descriptions: prits _putchar.c
+ * main- Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int str[] = {95, 112, 117, 116, 99, 104, 97, 114, 46, 99};
-	int count, sz;
+	char *c = "_putchar";
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
+	while (*c)
 	{
-		_putchar(str[count]);
+		_putchar(*c);
+		c++;
 	}
+	_putchar("\n");
 	_putchar('\n');
+	return (0);
 }
