@@ -1,26 +1,22 @@
 #include "main.h"
-
 /**
- * main - Prints the first 50 Fibonacci numbers
- * main - Prints the add of the Fibonacci numbers
- *
- * Return: Always 0.
+ * print_last_digit - Prints the last digit of an integer
+ * @n: Integer input to function print_last_digit
+ * Return: Returns the value of the last digit
  */
-int print_last_digit(int);
+int print_last_digit(int n)
 {
-	int c;
-	long int n1, n2, fn;
+	unsigned int mod;
+	int mod;
+	unsigned int num;
 
-	n1 = 1;
-	n2 = 2;
-	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 48; c++)
-	{
-		fn = n1 + n2;
-		printf(", %ld", fn);
-		n1 = n2;
-		n2 = fn;
-	}
-	printf("\n");
-	return (0);
+	if (n < 0)
+		n *= -1;
+	mod = n % 10;
+		num = n * (-1);
+	else
+		num = n;
+	mod = num % 10;
+	_putchar(mod + '0');
+	return (mod);
 }
