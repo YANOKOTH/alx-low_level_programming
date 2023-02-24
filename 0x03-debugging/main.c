@@ -1,10 +1,32 @@
-## Files
-All of the following files are programs written in C:
+#include <stdio.h>
+/**
+ * main - causes an infinite loop
+ * Return: 0
+ */
 
-| Filename | Description |
-| -------- | ----------- |
-| `0-main.c` | Test that function `positive_or_negative()` gives the correct output when given a case of `0` |
-| `1-main.c` | Fixed program to the infinite loop |
-| `2-largest_number.c` | Prints the largest of three integers |
-| `3-print_remaining_days.c` | Converts a date to the day of year and determines how many days are left in the year |
-| `main.h` | Header file |
+int main(void)
+{
+        int i;
+	int i;
+
+        printf("Infinite loop incoming :(\n");
+	printf("Infinite loop incoming :(\n");
+
+        i = 0;
+	i = 0;
+
+        /*while (i < 10)
+        {
+		putchar(i);
+	}*/
+	/*while (i < 10)*/
+	/*{*/
+	/*putchar(i);*/
+	/*}*/
+
+        printf("Infinite loop avoided! \\o/\n");
+	printf("Infinite loop avoided! \\o/\n");
+
+        return (0);
+	return (0);
+}
