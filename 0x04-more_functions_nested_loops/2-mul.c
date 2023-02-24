@@ -1,4 +1,3 @@
-#include "main.c"
 #include "main.h"
 /**
  * mul - finds the product of two numbers
@@ -11,6 +10,5 @@
  */
 int mul(int a, int b)
 {
-	int mul(int a * int b)
-		return (int a * int b);
+		return (a * b);
 }
