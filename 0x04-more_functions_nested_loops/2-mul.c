@@ -1,4 +1,4 @@
-#include <stio.h>
+#include "main.c"
 #include "main.h"
 /**
  * mul - finds the product of two numbers
