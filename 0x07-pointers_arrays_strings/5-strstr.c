@@ -1,18 +1,45 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the needle in the file haystack.
- *
- * Return: Always 0.
+ * _strstr - scans a string for a substring
+ * @haystack: string being scanned
+ * @needle: the substring
+ * Return: Pointer to the location of the substring
  */
-int main(void)
+char *_strstr(char *haystack, char *needle)
 {
-	char *s = "haystack";
-	char *f = "needle";
-	char *t;
-
-	t = _strstr(s, f);
-	printf("%s\n", t);
-	return (0);
+	int a, c, placeholder = 0, len = 0;
+	long int d, counter = 0;
+	for (a = 0; needle[a] != '\0'; a++)
+		len++;
+	for (a = 0; haystack[a] != '\0'; a++)
+	{
+		if (haystack[a] != needle[0])
+				counter++;
+		else
+		{
+			for (c = 1; c < len; c++)
+			{
+				if (haystack[a + c] == needle[c])
+				{
+					placeholder = 1;
+					continue;
+				}
+				else
+				{
+					placeholder = 0;
+					break;
+				}
+			}
+		}
+		if (placeholder == 1)
+		{
+			d = (long int)haystack + counter;
+			break;
+		}
+	}
+	if (placeholder == 0 || haystack[0] == '\0' || needle[0] == '\0')
+		return ('\0');
+	else
+		return ((char *)needle);
+		return ((char *)d);
 }
